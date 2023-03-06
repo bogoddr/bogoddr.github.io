@@ -1,17 +1,52 @@
-<h1>hi hello :)</h1>
-<h3>Simfile packs</h3>
-<ul>
-<li><a href="downloads/Mimi_Made_These_Charts.rar">Mimi Made These Charts</a></li>
-</ul>
-<h3>useful stuff</h3>
-<ul>
-<li><a href="https://drive.google.com/drive/folders/13-sSz85wlIeUDzKF1h6gfMd1YyzC2CbO?usp=sharing">Dahn Dahn Right 2023 promo graphics (google drive)</a></li>
-<li><a href="parg/PA_Rhythm_Gaming_Logo_Vector.svg">PARG Logo (svg)</a></li>
-<li><a href="parg/PA_Rhythm_Gaming_Logo.png">PARG Logo (png)</a></li>
-<li><a href="parg/arrow_trophy_engrave_plate_jul12.svg">Dahn Dahn Right 2022 trophy designs (final) (svg)</a></li>
-<li><a href="DDRCardDraw-omni/#game-omnimix">DDR Card Draw Omnimix fork (WIP)</a></li>
-</ul>
-<h3>Cool links</h3>
-<ul>
-<li><a href="img/mimi.png">click here</a></li>
-</ul>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>bogo's website</title>
+  </head>
+  <body>
+	<h1>hi hello :)</h1>
+	<marquee>web design is my passion</marquee>
+    <h3>Simfile packs</h3>
+    <ul>
+    <li><a href="downloads/Mimi_Made_These_Charts.rar">Mimi Made These Charts</a></li>
+    </ul>
+    <h3>useful stuff</h3>
+    <ul>
+    <li><a href="https://drive.google.com/drive/folders/13-sSz85wlIeUDzKF1h6gfMd1YyzC2CbO?usp=sharing">Dahn Dahn Right 2023 promo graphics (google drive)</a></li>
+    <li><a href="parg/arrow_trophy_engrave_plate_jul12.svg">Dahn Dahn Right 2022 trophy designs (final) (svg)</a></li>
+    <li><a href="DDRCardDraw-omni/#game-omnimix">DDR Card Draw Omnimix fork (WIP)</a></li>
+    </ul>
+    <h3>Cool links</h3>
+    <ul>
+    <li><a id="toggle-mimi" href="#">click here</a></li>
+    </ul>
+    <div id="mimi-overlay" style="display: none; background-color: rgba(0,0,0,0.3); justify-content: center; align-items: center; position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+        <div 
+            style="
+                background-image: url('img/mimi.png');
+                background-size: 100%;
+                position: absolute;
+                width: 500px;
+                height: 500px;
+                max-width: 100%;
+                max-width: 100%;
+            "
+        ></div>
+    </div>
+  </body>
+  <script>
+    var aWala = new Audio('assets/wala.mp3');
+    var aGoaway = new Audio('assets/goaway.wav');
+    document.getElementById('toggle-mimi').onclick = function () {
+        aWala.play();
+        document.getElementById('mimi-overlay').style.display = 'flex';
+    }
+    document.getElementById('mimi-overlay').onclick = function () {
+        aGoaway.play();
+        document.getElementById('mimi-overlay').style.display = 'none';
+    }
+  </script>
+</html>
